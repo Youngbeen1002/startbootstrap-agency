@@ -525,22 +525,33 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.instagram.com/explore/tags/travel/">
+              <a href="">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
+
+        <div class="privacy-hover">
+          <div class="privacy-hover-content">
+           <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+             <a class="privacy" data-toggle="modal" href="#privacyModal">Privacy Policy</a>
             </li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-          </ul>
+           </ul>
+          </div>
         </div>
+        
+        <div class="termsofuse-hover">
+          <div class="termsofuse-hover-content">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a class="termsofuse" data-toggle="modal" href="#termsofuseModal">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div> 
+
       </div>
     </div>
   </footer>
@@ -799,6 +810,35 @@
       </div>
     </div>
   </div>
+
+   <!-- Modal 7 --> 
+   <div class="privacy-modal modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Priavacy Policy</h2>
+                  
+                  <p>A privacy policy is a statement or a legal document (in privacy law) that discloses some or all of the ways a party gathers, uses, discloses, and manages a customer or client's data. It fulfils a legal requirement to protect a customer or client's privacy. Personal information can be anything that can be used to identify an individual, not limited to the person's name, address, date of birth, marital status, contact information, ID issue, and expiry date, financial records, credit information, medical history, where one travels, and intentions to acquire goods and services.</p>
+                  
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
