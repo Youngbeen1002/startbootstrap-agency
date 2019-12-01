@@ -164,6 +164,25 @@
     }
       </style>
 
+<style>
+  .project-slider {
+    height: 100%;
+    min-height: 400px;
+  }
+  .project-slider .slick-list,
+  .project-slider .slick-track,
+  .project-slider .slick-slide,
+  .project-slider .slick-slide > div {
+    height: 100%;
+  }
+  .project-slider .image-bg {
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+</style>
+
   <!-- Services -->
   <section class="page-section" id="services">
     <div class="container">
@@ -584,11 +603,14 @@
                 <h2 class="text-uppercase">Danang</h2>
                 <p class="item-intro text-muted">Vietnam</p>
                 <div class="slider project-slider">
-                  <div class="image-bg" style="background-image:url(img/slider/vietnam/1.jpg);"></div>
-                  <div class="image-bg" style="background-image:url(img/slider/vietnam/2.jpg);"></div>
-                  <div class="image-bg" style="background-image:url(img/slider/vietnam/3.jpg);"></div>
-                  <div class="image-bg" style="background-image:url(img/slider/vietnam/4.jpg);"></div>
-                  <div class="image-bg" style="background-image:url(img/slider/vietnam/5.jpg);"></div>
+                  <div class="slider">
+                    <div><img src="img/slider/vietnam/1.jpg" /></div>
+                    <div><img src="img/slider/vietnam/2.jpg" /></div>
+                    <div><img src="img/slider/vietnam/3.jpg" /></div>
+                    <div><img src="img/slider/vietnam/4.jpg" /></div>
+                    <div><img src="img/slider/vietnam/5.jpg" /></div>
+                  </div>
+      
                 </div>
                 <p>Da Nang is the commercial and educational centre of Central Vietnam, as well as being the largest city in the region. In addition to its well-sheltered, easily accessible port, Da Nang's location on National Route 1A and the North–South Railway makes it a transport hub. It is within 100 km of several UNESCO World Heritage Sites, including the Imperial City of Hue, the Old Town of Hoi An, and the My Son ruins.</p>
                 <ul class="list-inline">
@@ -794,18 +816,23 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.slider').slick({
-        autoplay: true,
-        dots: true,
-        prevArrow: '<button type="button" class="slick-buttons slick-prev"><span>Previous</span></button>',
-        nextArrow: '<button type="button" class="slick-buttons slick-next"><span>Next</span></button>',
-        customPaging: function(slick,index) {
-          return '<button><span>' + (index+1) + '</span></button>';
-        }
+  <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".slider").slick({
+          autoplay: true,
+          dots: true,
+          prevArrow:
+            '<button type="button" class="slick-buttons slick-prev"><span>Previous</span></button>',
+          nextArrow:
+            '<button type="button" class="slick-buttons slick-next"><span>Next</span></button>',
+          customPaging: function(slick, index) {
+            return "<button><span>" + (index + 1) + "</span></button>";
+          }
+        });
+        
       });
-    });
+    </script>
   </script>
 
   </script>
