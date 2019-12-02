@@ -801,8 +801,10 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background: #313A3D;
   color: #FD9638;
+  padding: 13px 50px;
 }
 form input[type="submit"]:focus {
   outline: none;
   background: #cd6302;
+  padding: 13px 50px;
 }
