@@ -772,7 +772,7 @@ form .field input[type="text"]:focus + label, form .field input[type="text"].foc
 form .field textarea:focus + label,
 form .field textarea.focused + label {
   width: 18%;
-  background: #FD9638;
+  background: #fed136;
   color: #313A3D;
 }
 form .field input[type="text"].focused + label,
